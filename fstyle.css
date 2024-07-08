@@ -1,0 +1,121 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background : url(Bgimg.png) ;
+    background-size:cover;
+}
+
+nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    font-size: 15px;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 30px;
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+nav li{
+    padding: 0px;
+    display: inline-block ;
+    margin: 0 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    transition: .5s
+    ;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a:hover , nav a.active{
+    color: turquoise;
+}
+
+.hamburger{
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: 1s;
+}
+
+.product_cards li{
+    display: inline-block;
+    margin: 5px;
+}
+
+@media all and (max-width : 650px){
+    nav{
+        height: max-content;
+        flex-direction: column;
+    }
+    nav li{
+        display : block;
+        padding: 10px 0;
+    }
+
+    ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+
+    .logo{
+        align-self: flex-start;
+    }
+
+    .hamburger{
+        display: block;
+        position : absolute;
+        top: 1px;
+        right: 30px;
+    }
+
+    .active{
+        display: block;
+    }
+    ul {
+        animation: dropdown 0.5s forwards;
+        animation-fill-mode: both;
+    }
+      
+    .active {
+        animation: dropdown 1s forwards;
+        animation-fill-mode: both;
+    }
+      
+    @keyframes dropdown {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+    }
+
+    .product_cards{
+        display: block;
+    }
+}
