@@ -50,7 +50,6 @@
     font-weight: 600;
     color: var(--light);
     text-transform: capitalize;
-    text-wrap: nowrap;
     text-overflow: ellipsis;
   }
   

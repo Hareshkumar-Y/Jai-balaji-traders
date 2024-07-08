@@ -6,29 +6,68 @@ menu.addEventListener('click',()=>{
     navUL.classList.toggle('active')
 })
 
-window.onscroll = () => {
-    console.log('Scrolling...');
-    sections.forEach((sec) => {
-        let top = window.scrollY;
-        let offset = window.scrollY;
-        let height = sec.offsetHeight - 150;
-        let id = sec.getAttribute('id')
 
-        console.log(`Section ${id} offsetTop: ${sec.offsetTop}, height: ${height}`);
 
-        if (top >= sec.offsetTop && top < (sec.offsetTop + height)) {
-            console.log(`Section ${id} is in viewport`);
-            let navLinks = navUL.querySelectorAll('li') // Get all li elements inside navUL
-            navLinks.forEach((link) => {
-                link.classList.remove('active');
-                console.log(`Removing active class from link ${link.textContent}`);
-                let navLink = document.querySelector('nav a[href*=' + id + ']');
-                console.log(`Found nav link with href*=${id}: ${navLink}`);
-                navLink.classList.add('active');
-                console.log(`Added active class to nav link ${navLink.textContent}`);
-            })
-        } else {
-            console.log(`Section ${id} is not in viewport`);
-        }
+// Get all nav links
+const navLinks = document.querySelectorAll('nav a');
+
+// Add an event listener to each nav link
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    // Prevent default link behavior
+    e.preventDefault();
+
+    // Get the target section ID
+    const targetId = link.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+
+    // Add a smooth scrolling effect
+    window.scrollTo({
+      top: targetSection.offsetTop,
+      behavior: 'smooth'
     });
-};
+  });
+});
+
+// Add an event listener to each nav link
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    // Prevent default link behavior
+    e.preventDefault();
+
+    // Get the target section ID
+    const targetId = link.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+
+    // Add a smooth scrolling effect
+    window.scrollTo({
+      top: targetSection.offsetTop,
+      behavior: 'mooth'
+    });
+
+    // Highlight the nav link
+    navLinks.forEach((navLink) => navLink.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+
+// Add an event listener to the window scroll event
+window.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('section');
+  const scrollPosition = window.scrollY;
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionId = section.getAttribute('id');
+
+    if (scrollPosition >= sectionTop - 200 && scrollPosition <= sectionTop + 200) {
+      navLinks.forEach((link) => {
+        if (link.getAttribute('href') === `#${sectionId}`) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+  });
+});
