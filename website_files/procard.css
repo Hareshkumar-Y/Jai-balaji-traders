@@ -14,19 +14,20 @@
     gap: 1px;
     padding: 1rem;
     width: 300px;
-    height: fit-content;
+    height: 500px;
     background-color: var(--bg-card);
     border-radius: 1rem;
   }
   
   .image_container {
     overflow: hidden;
+    cursor: pointer;
   
     position: relative;
     z-index: 5;
   
     width: 100%;
-    height: 300px;
+    height: 250px;
     background-color: var(--primary-800);
   
     border-radius: 0.5rem;
@@ -53,22 +54,22 @@
   }
   
   .size {
-    font-size: 15px;
+    font-size: 30px;
     color: var(--light);
     text-align: start;
     padding-top:10px;
   }
   
-  .list-Colours {
+  .list-size {
     display: flex;
     align-items: center;
-    gap: 0px;
+    gap: 2px;
     margin-left: 0;
     padding: 0;
-    margin-top: 1px;
+    margin-top: 5px;
   }
   
-  .list-Colours .item-list {
+  .list-size .item-list {
     list-style: none;
   }
   
@@ -79,9 +80,7 @@
   }
   
   .price {
-    margin-top: 10px;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--light);
-    margin-left: 40%;
   }

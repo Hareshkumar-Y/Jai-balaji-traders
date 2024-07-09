@@ -1,11 +1,12 @@
 let menu = document.querySelector('.hamburger input')
 let navUL = document.querySelector('.List001')
 let sections = document.querySelectorAll('section') // Use querySelectorAll to get all sections
-const mediaQuery = window.matchMedia("(max-width: 768px)");
 
 menu.addEventListener('click',()=>{
     navUL.classList.toggle('active')
 })
+
+
 
 // Get all nav links
 const navLinks = document.querySelectorAll('nav a');
@@ -40,8 +41,8 @@ navLinks.forEach((link) => {
 
     // Add a smooth scrolling effect
     window.scrollTo({
-      top: targetSection.offsetTop ,
-      behavior: 'smooth'
+      top: targetSection.offsetTop,
+      behavior: 'mooth'
     });
 
     // Highlight the nav link
