@@ -13,8 +13,8 @@ nav{
     padding: 10px;
     font-size: 20px;
     z-index: 100;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
     width: 100%;
     height: 30px;
     display : flex;
@@ -60,7 +60,7 @@ nav a.active {
 }
 
 section {
-    min-height: 100vh;
+    min-height:200px;
     padding: 10px;
     padding-top: 30px;
     display: flex;
@@ -132,3 +132,125 @@ section {
         display: block;
     }
 }
+
+
+
+/* infinite scroll */
+
+.wrapper {
+    margin-top: 2rem;
+    padding-top: 50px;
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+  
+  @keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+  
+  @keyframes scrollRight {
+    to {
+      right: -200px;
+    }
+  }
+  
+  .itemLeft,
+  .itemRight {
+    width: 200px;
+    height: 100px;
+    background-color: #cdbec2;
+    border-radius: 6px;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  
+  .itemLeft {
+    left: max(calc(200px * 4), 100%);
+    animation-name: scrollLeft;
+  }
+  
+  .itemRight {
+    right: max(calc(200px * 4), calc(100% + 200px));
+    animation-name: scrollRight;
+  }
+  
+  .item1 {
+    animation-delay: calc(30s / 4 * (4 - 1) * -1);
+  }
+  
+  .item2 {
+    animation-delay: calc(30s / 4 * (4 - 2) * -1);
+  }
+  
+  .item3 {
+    animation-delay: calc(30s / 4 * (4 - 3) * -1);
+  }
+  
+  .item4 {
+    animation-delay: calc(30s / 4 * (4 - 4) * -1);
+  }
+  
+  .wrapper a{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      text-align: center;
+      font-size:25px;
+      color: black;
+      padding-top: 15px;
+      text-decoration: none;
+      
+  }
+  
+  .leggines{
+      position: relative;
+      left:30px;
+      top:30px;
+  }
+  
+  .bra{
+      position: relative;
+      left:65px;
+      top:30px;
+  }
+  
+  .panties{
+      position: relative;
+      left:40px;
+      top:30px;
+  }
+  
+  .innerwears{
+      position: relative;
+      left:0px;
+      top:30px;
+  }
+  
+  /* .wrapper a:hover{
+    background-color: antiquewhite; */
+    
+  }
+  
+  ::before,
+  ::after{
+    
+  }
+  #home{
+    height:fit-content;
+    align-items: first baseline;
+    justify-content:first baseline;
+  }
