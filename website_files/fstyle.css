@@ -1,8 +1,9 @@
 body{
     margin: 0px;
     padding: 0px;
-    background : url(web_bg.jpg) ;
+    background-image: url(web_bg.jpg);
     background-size:cover;
+    background-attachment: scroll;
 }
 
 nav{
