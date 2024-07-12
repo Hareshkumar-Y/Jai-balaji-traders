@@ -34,4 +34,14 @@ all important files of their website
 
 https://github.com/Hareshkumar-Y/Jai-balaji-traders/tree/4956bdc71bf3ad0e6a41a2a3e1c505044cee1457/website_files
 
-i have joined the respository
+i have joined the respository  - Rithish.
+
+
+<section id="home">
+    <div class="wrapper">
+      <div class="itemLeft item1"><a href="#" class="leggines">LEGGINES</a></div>
+      <div class="itemLeft item2"><a href="#" class="bra">BRA</a></div>
+      <div class="itemLeft item3"><a href="#" class="panties">PANTIES</a></div>
+      <div class="itemLeft item4"><a href="#" class="innerwears">INNERWEARS</a></div>
+    </div>
+</section>

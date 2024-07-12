@@ -100,7 +100,7 @@ section {
     .hamburger{
         display: block;
         position : absolute;
-        top: 1px;
+        top: 5px;
         right: 30px;
     }
 

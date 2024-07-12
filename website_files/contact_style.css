@@ -2,7 +2,7 @@
     width: max-content;
     height: max-content;
     background-image: linear-gradient(163deg, #ff0000 10%, #1900ff 100%);
-    border-radius: 30px;
+    border-radius: 20px;
     transition: all .3s;
    }
    
@@ -16,8 +16,8 @@
    }
    
    .contact_card2:hover {
-    transform: scale(0.99);
-    border-radius: 30px;
+    transform: scale(0.97);
+    border-radius: 20px;
    }
    
    .contact_card:hover {
