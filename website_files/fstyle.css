@@ -64,6 +64,7 @@ section {
     padding: 10px;
     padding-top: 30px;
     display: flex;
+    align-items: center;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -73,6 +74,12 @@ section {
 .product_cards li{
     display: inline-block;
     margin: 5px;
+}
+
+#product{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 4%;
 }
 
 @media all and (max-width : 650px){
@@ -242,15 +249,11 @@ section {
   
   /* .wrapper a:hover{
     background-color: antiquewhite; */
-    
-  }
   
-  ::before,
-  ::after{
-    
-  }
+  *::before,*::after{
   #home{
     height:fit-content;
     align-items: first baseline;
     justify-content:first baseline;
   }
+}
