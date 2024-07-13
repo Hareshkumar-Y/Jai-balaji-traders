@@ -1,0 +1,58 @@
+@media all and (max-width : 650px){
+    #nav_logo{
+        word-spacing: 15px;
+        letter-spacing: 5px;
+    }
+    nav{
+        height: min-content;
+        flex-direction: column;
+    }
+
+    nav img{
+        align-self: flex-start;
+    }
+
+    .menu_bar li{
+        display : block;
+        font-size: 30px;
+        padding: 10px 0;
+    }
+
+    ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+
+    .button{
+        display: block;
+        position: absolute;
+        top: 9px;
+        right: 25px;
+    }
+
+    .active{
+        display: block;
+    }
+
+    ul {
+        animation: dropdown 0.5s forwards;
+        animation-fill-mode: both;
+    }
+      
+    .active {
+        animation: dropdown 1s forwards;
+        animation-fill-mode: both;
+    }
+      
+    @keyframes dropdown {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+    }
+}
