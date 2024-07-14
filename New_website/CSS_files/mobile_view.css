@@ -4,7 +4,7 @@
         letter-spacing: 5px;
     }
     nav{
-        height: min-content;
+        height: max-content;
         flex-direction: column;
     }
 
@@ -31,28 +31,77 @@
         right: 25px;
     }
 
-    .active{
-        display: block;
-    }
-
     ul {
-        animation: dropdown 0.5s forwards;
         animation-fill-mode: both;
     }
       
-    .active {
-        animation: dropdown 1s forwards;
+    .active_nav {
+        display: block;
+        animation: dropdown_1 .5s;
+        animation-fill-mode: both;
+    }
+      
+    @keyframes dropdown_1 {
+        0% {
+          height: 30px;
+        }
+        100% {
+          height:290px ;
+        }
+    }
+
+    .active_links {
+        display: block;
+        animation: dropdown .5s;
         animation-fill-mode: both;
     }
       
     @keyframes dropdown {
         0% {
-          transform: translateY(-100%);
-          opacity: 0;
+            opacity: 0; 
+            transform: translateY(-100%);
+        }
+        50%{
+            opacity: 0;
         }
         100% {
-          transform: translateY(0);
-          opacity: 1;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .inactive_nav {
+        display: block;
+        animation: dropdown_1_reverse .5s;
+        animation-fill-mode: both;
+    }
+      
+    @keyframes dropdown_1_reverse {
+        0% {
+          height: 290px;
+        }
+        100% {
+          height: 30px;
+        }
+    }
+
+    .inactive_links {
+        display: block;
+        animation: dropdown_reverse .5s;
+        animation-fill-mode: both;
+    }
+      
+    @keyframes dropdown_reverse {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        10%{
+            opacity: 0;
+        }
+        100% {
+            opacity: 0; 
+            transform: translateY(-100%);
         }
     }
 }

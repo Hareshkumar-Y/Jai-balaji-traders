@@ -1,0 +1,12 @@
+section {
+    min-height:200px;
+    padding: 10px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: 1s;
+}
+
