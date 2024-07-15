@@ -2,6 +2,7 @@ body{
     background-image: url(../bg_imgs/web_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
 }
 
 nav{
@@ -13,7 +14,7 @@ nav{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-weight: 500;
     z-index: 100;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
     width: 100%;
     height: 30px;
     display : flex;
@@ -71,7 +72,7 @@ a{
     color: black;
 }
 
-a:hover{
+a:hover , .active{
     color: rgba(255, 0, 0, 0.486);
     transition: .25s;
 }

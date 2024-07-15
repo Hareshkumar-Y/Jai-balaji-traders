@@ -71,7 +71,7 @@ navLinks.forEach((link) => {
 
     // Add a smooth scrolling effect
     window.scrollTo({
-      top: targetSection.offsetTop ,
+      top: targetSection.offsetTop-70 ,
       behavior: 'smooth'
     });
 
