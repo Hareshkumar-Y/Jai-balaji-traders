@@ -1,12 +1,12 @@
 body{
-    background-image: url(/New_website/bg_imgs/web_bg.jpg);
+    background-image: url(../bg_imgs/web_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 nav{
     position:fixed;
-    top: 35px;
+    top: 30px;
     left: 0px;
     padding: 10px;
     font-size: 20px;
@@ -36,13 +36,14 @@ nav img{
     width: 100%;
     z-index: 100;
     height: max-content;
-    font-size: 30px;
+    font-family: 'Salsa' , cursive;
+    font-size: 25px;
     font-weight: 900;
     letter-spacing: 15px;
     word-spacing: 50px;
     -webkit-backdrop-filter: blur(100px);
     backdrop-filter: blur(100px);
-    background: url(/New_website/bg_imgs/banner_bg.jpg);
+    background: url(../bg_imgs/banner_bg.jpg);
     animation: gradient 120s ease infinite;
 }
 

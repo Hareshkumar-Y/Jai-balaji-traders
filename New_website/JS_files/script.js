@@ -2,6 +2,7 @@ let menu = document.querySelector('.button')
 let navUL = document.querySelector('.menu_bar')
 let navBar = document.querySelector('nav')
 
+
 menu.addEventListener('click', () => {
     if (navUL.classList.contains('active_links')) {
         navUL.classList.remove('active_links')
@@ -14,6 +15,15 @@ menu.addEventListener('click', () => {
         navBar.classList.remove('inactive_nav')
         navBar.classList.add('active_nav')
     }
+})
+
+document.addEventListener('click', (e) => {
+  if (!navUL.contains(e.target) && !menu.contains(e.target)) {
+    navUL.classList.remove('active_links')
+    navUL.classList.add('inactive_links')
+    navBar.classList.remove('active_nav')
+    navBar.classList.add('inactive_nav')
+  }
 })
 
 navUL.addEventListener('animationend', () => {
@@ -64,6 +74,12 @@ navLinks.forEach((link) => {
       top: targetSection.offsetTop ,
       behavior: 'smooth'
     });
+
+    navUL.classList.remove('active_links')
+    navUL.classList.add('inactive_links')
+    navBar.classList.remove('active_nav')
+    navBar.classList.add('inactive_nav')
+
 
     // Highlight the nav link
     navLinks.forEach((navLink) => navLink.classList.remove('active'));
