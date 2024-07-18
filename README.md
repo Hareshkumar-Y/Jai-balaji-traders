@@ -29,7 +29,7 @@ all important files of their website
                         <span>$299</span>
                       </div>
                     </div>
-                </div>
+</div>
 
 
 https://github.com/Hareshkumar-Y/Jai-balaji-traders/tree/4956bdc71bf3ad0e6a41a2a3e1c505044cee1457/website_files

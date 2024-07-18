@@ -19,10 +19,12 @@ menu.addEventListener('click', () => {
 
 document.addEventListener('click', (e) => {
   if (!navUL.contains(e.target) && !menu.contains(e.target)) {
-    navUL.classList.remove('active_links')
-    navUL.classList.add('inactive_links')
-    navBar.classList.remove('active_nav')
-    navBar.classList.add('inactive_nav')
+    if (navUL.classList.contains('active_links')) {
+      navUL.classList.remove('active_links')
+      navUL.classList.add('inactive_links')
+      navBar.classList.remove('active_nav')
+      navBar.classList.add('inactive_nav')
+    }
   }
 })
 
