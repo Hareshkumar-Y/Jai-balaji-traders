@@ -1,20 +1,18 @@
 section {
     position: relative;
-    min-height:2000px;
+    display: flex;
+    flex-direction: column;
+    min-height:300px;
     top: 70px;
     padding: 10px;
-    display: flex;
     align-items: center;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    text-wrap:balance ;
     color: #fff;
-    transition: 1s;
-    max-height: max-content;
-    overflow-y: hidden;
 }
 
 #home {
-    display: flex;
     align-items: center;
     justify-content: center;
     background-image: url(/New_website/bg_imgs/summa2.jpg);
@@ -23,11 +21,10 @@ section {
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
-    animation: zoom linear;
-    animation-timeline: scroll(X);
 }
 
 #home h1{
+    text-align: center;
     font-size: 50px;
     font-weight: 700;
 }
