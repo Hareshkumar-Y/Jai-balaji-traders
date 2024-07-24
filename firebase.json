@@ -1,7 +1,6 @@
 {
   "hosting": [{
     "site": "siteversion1",
-    // "target": "siteversion1",
     "public": "website_files",
     "ignore": [
       "firebase.json",
@@ -11,7 +10,6 @@
   } ,
   {
     "site": "siteversion2",
-    // "target": "siteversion2",
     "public": "New_website",
     "ignore": [
       "firebase.json",
