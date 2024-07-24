@@ -1,5 +1,5 @@
 body{
-    background-image: url(../bg_imgs/web_bg.jpg);
+    background-image: url(web_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -44,7 +44,7 @@ nav img{
     word-spacing: 50px;
     -webkit-backdrop-filter: blur(100px);
     backdrop-filter: blur(100px);
-    background: url(../bg_imgs/banner_bg.jpg);
+    background: url(banner_bg.jpg);
     animation: gradient 120s ease infinite;
 }
 
