@@ -1,0 +1,21 @@
+{
+  "hosting": [{
+    "site": "siteversion1",
+    "public": "website_files",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  } ,
+  {
+    "site": "siteversion2",
+    "public": "New_website",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+  ]
+}
