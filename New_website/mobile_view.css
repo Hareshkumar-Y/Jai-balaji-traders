@@ -18,10 +18,11 @@
         padding: 10px 0;
     }
 
-    ul{
+    .menu_bar{
         text-align: center;
         padding: 0;
         display: none;
+        animation-fill-mode: both;
     }
 
     .button{
@@ -29,10 +30,6 @@
         position: absolute;
         top: 9px;
         right: 25px;
-    }
-
-    ul {
-        animation-fill-mode: both;
     }
       
     .active_nav {
