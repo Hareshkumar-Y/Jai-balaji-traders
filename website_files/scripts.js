@@ -71,16 +71,16 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// color buttons
-const color_buttons = document.querySelectorAll('.list-Colours button')
-const promage = document.querySelector('.image_container')
+// // color buttons
+// const color_buttons = document.querySelectorAll('.list-Colours button')
+// const promage = document.querySelector('.image_container')
 
-color_buttons.forEach(c_button => {
-  c_button.addEventListener('click', () => {
-    let c_name = c_button.className
-    if (!c_button.classList.contains('somthing')){
-      let color_name = c_name.slice(17 , )
-      promage.style.backgroundColor = color_name
-    }
-  })
-})
+// color_buttons.forEach(c_button => {
+//   c_button.addEventListener('click', () => {
+//     let c_name = c_button.className
+//     if (!c_button.classList.contains('somthing')){
+//       let color_name = c_name.slice(17 , )
+//       promage.style.backgroundColor = color_name
+//     }
+//   })
+// })

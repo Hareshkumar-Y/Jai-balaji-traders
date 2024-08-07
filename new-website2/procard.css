@@ -1,5 +1,5 @@
 .product-card {
-    max-width: 12em;
+    max-width: 13.5em;
     background-color:lightslategray;
     padding: 1em;
     box-shadow: 0 5px 5px #e1e1e1;
@@ -7,10 +7,10 @@
     transition: 0.3s;
   }
   .product-card img {
-    max-width: 100%;
+    /* max-width: 100%; */
     border-radius: 10px;
-    height: 150px;
-    width: 200px;
+    height: 289px;
+    width: 217px;
   }
   .product-card h4 {
     font-size: 1.3em;
@@ -134,4 +134,6 @@ h4:hover{
   float:unset;
 }
 
-
+img{
+  background: url('/New_website/banner_bg.jpg');
+}
