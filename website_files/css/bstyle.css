@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-image: url(/website_files/img/web_bg.jpg);
+    background-image: url(..//img/web_bg.jpg);
     background-size:cover;
     background-attachment: scroll;
 }

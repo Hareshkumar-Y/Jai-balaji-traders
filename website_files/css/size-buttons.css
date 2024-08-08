@@ -1,22 +1,28 @@
 .list-size .item-list-button {
     cursor: pointer;
   
-    padding: 0.5rem;
-    background-color: red;
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgb(255, 255, 255);
   
-    font-size: 0.75rem;
-    color: var(--light);
+    font-size: 1rem;
+    font-weight: 800;
+    color: blue ;
   
     border: 2px solid var(--zinc-800);
-    border-radius: 0.25rem;
+    border-radius: 100px;
   
     transition: all 0.3s ease-in-out;
   } 
 .item-list-button:hover {
-    border: 2px solid whitesmoke;
+    color: brown;
+    border: 1px solid whitesmoke;
 }
 .item-list-button:focus {
-    background-color: red;
+    background-color: rgb(0, 162, 255);
+
+    color: rgb(255, 255, 255);
   
     border: 2px solid var(--primary-shadow);
   
