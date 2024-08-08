@@ -71,15 +71,16 @@ section {
     transition: 1s;
 }
 
-.product_cards li{
+.product_cards>li{
+    /* list-style: square; */
     display: inline-block;
-    margin: 5px;
+    margin: 10px;
 }
 
 #product{
   display: flex;
   flex-wrap: wrap;
-  padding-left: 4%;
+  justify-content: center;
 }
 
 @media all and (max-width : 650px){
