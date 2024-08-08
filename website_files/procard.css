@@ -52,14 +52,14 @@
     text-overflow: ellipsis;
   }
   
-  .Colours {
+  .size {
     margin-top : 5px;
     margin-left: 0;
     font-size: 20px;
     color: var(--light);
   }
   
-  .list-Colours {
+  .list-size {
     display: flex;
     align-items: center;
     gap: 0px;
@@ -68,7 +68,7 @@
     margin-top: 1px;
   }
   
-  .list-Colours .item-list {
+  .list-size .item-list {
     list-style: none;
   }
   
