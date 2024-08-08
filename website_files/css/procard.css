@@ -17,6 +17,7 @@
     height: 560px;
     background-color: var(--bg-card);
     border-radius: 1rem;
+    justify-content: space-between;
   }
   
   .image_container {
