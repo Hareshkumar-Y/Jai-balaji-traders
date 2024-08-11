@@ -1,0 +1,33 @@
+.list-size .item-list-button {
+    cursor: pointer;
+  
+    padding: 5px;
+    margin: 2px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgb(94, 55, 55);
+  
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(255, 255, 255) ;
+  
+    border: 2px solid var(--zinc-800);
+    border-radius: 100px;
+  
+    transition: all 0.3s ease-in-out;
+  } 
+.item-list-button:hover {
+    color: rgb(255, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+.item-list-button:focus {
+    background-color: rgb(0, 162, 255);
+
+    transform: scale(1.2);
+
+    color: rgb(255, 255, 255);
+  
+    border: 2px solid var(--primary-shadow);
+  
+    box-shadow: inset 0px 1px 4px var(--primary-shadow);
+}
