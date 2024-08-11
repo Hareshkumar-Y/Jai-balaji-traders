@@ -132,8 +132,66 @@ h4:hover{
   gap:6px;
   /* display:grid; */
   float:unset;
+  overflow-y: hidden;
 }
 
 img{
-  background: url('/New_website/banner_bg.jpg');
+  /* background: url('/New_website/banner_bg.jpg'); */
+  background-color: pink;
+
+}
+
+.image_container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+  justify-content: center;
+  /* padding:10px; */
+  overflow: hidden;
+
+}
+
+.image_container img{
+  /* object-fit: cover; */
+  transition: 0.2s ;
+  cursor: pointer;
+}
+
+ .popup-image{
+  position: fixed;
+  top:0%; left:0%;
+  background: rgba(0,0,0,.9);
+  height: 100%;
+  width: 100%;
+  z-index:100;
+  display: none;
+}
+
+.popup-image span{
+  position: absolute;
+  top:0; right: 10px;
+  font-size:40px;
+  font-weight: bolder;
+  color:#fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popup-image img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+
+
+@media (max-width:768px){
+  .popup-image img{
+    width: 95%;
+    
+  }
 }
