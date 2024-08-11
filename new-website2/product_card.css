@@ -1,0 +1,143 @@
+.pro_cards li {
+  display: inline-block;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.product-card {
+  max-width: 12em;
+  background-color:lightslategray;
+  padding: 1em;
+  box-shadow: 0 5px 5px #e1e1e1;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: 150px;
+  width: 200px;
+}
+.product-card h4 {
+  font-size: 1.3em;
+  margin: 0.5em 0;
+  font-weight: bold;
+  transition: 0.3s;
+  color: #fff;
+}
+.product-card div {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+.product-card button {
+  background-color: #0e0e10;
+  color: #fff;
+  border: none;
+  border-radius:6px;
+  width: 25px;
+  height: 25px;
+  font-size: em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  /* position: relative; */
+  /* bottom:15px; */
+  
+}
+
+@media screen and (max-width: 576px) {
+  .product-card {
+    font-size: 0.9em;
+  }
+}
+
+h5{
+  font-size:20px;
+}
+
+.product-card:hover{
+  background-color:rgb(74, 74, 80);
+  border-radius: 12px;
+}
+
+#but1:hover{
+  background-color: #b1b1e9;
+  border-color: aliceblue;
+  border-style: dotted;
+  cursor: pointer;
+}
+
+#but2:hover{
+  background-color: #b1b1e9;
+  border-color: aliceblue;
+  border-style: dotted;
+  cursor: pointer;
+}
+
+#but3:hover{
+  background-color: #b1b1e9;
+  border-color: aliceblue;
+  border-style: dotted;
+  cursor: pointer;
+}
+
+#but4:hover{
+  background-color: #b1b1e9;
+  border-color: aliceblue;
+  border-style: dotted;
+  cursor: pointer;
+}
+
+#but5:hover{
+  background-color: #b1b1e9;
+  border-color: aliceblue;
+  border-style: dotted;
+  cursor: pointer;
+}
+
+.size{
+  margin: 0%;
+  padding: 0%;
+  /* position: relative; */
+  color: #fff;
+
+}
+
+#price{
+  margin: 0%;
+  padding: 0%;
+  /* position: relative; */
+  top:15px;
+  transition: 0.2s;
+  color: #fff;
+}
+
+#price:hover{
+  color: rgb(204, 216, 216);
+  cursor: pointer;
+  transform:scale(1.2);
+  border: #0e0e10;
+
+}
+
+h4:hover{
+  /* color: rgb(107, 131, 132); */
+  transform:scale(1.1);
+  cursor: pointer;
+}
+
+.pro{
+display:grid;
+grid: row 3px;
+grid-auto-rows: max-content;
+justify-content: space-between;
+gap:6px;
+/* display:grid; */
+float:unset;
+}
+
+
