@@ -1,3 +1,15 @@
+footer{
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  bottom: 0;
+  margin: 0;
+  padding: 10px;
+}
+
+
 .card {
     --bg-card: #5e5e5e;
     --primary: #6d28d9;

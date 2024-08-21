@@ -6,6 +6,17 @@ body{
     background-attachment: scroll;
 }
 
+footer{
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  bottom: 0;
+  margin: 0;
+  padding: 10px;
+}
+
 nav{
     position: fixed;
     top: 0px;
