@@ -71,6 +71,8 @@ window.addEventListener('scroll', () => {
   });
 });
 
+
+
 // // color buttons
 // const color_buttons = document.querySelectorAll('.list-Colours button')
 // const promage = document.querySelector('.image_container')

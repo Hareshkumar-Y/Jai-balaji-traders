@@ -41,6 +41,7 @@
 <!-- product section begins here -->
 
   <section id="product">
+
         <link rel="stylesheet" href="css/procard.css">
         <ul class="product_cards">
             <li id="00">
@@ -70,6 +71,8 @@
                       </div>
                     </div>
                 </div>
+             
+          
             </li>
             <li id="1">
                 <div class="card">
@@ -1543,7 +1546,89 @@
             </div>
             </li>
         </ul>
-  </section>
+<!-- Pop up images -->
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/00.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/1.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/2.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/3.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/111.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/129.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/136.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/222.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/250.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/265.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/345.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/401.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/444.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/488.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/506.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/666.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/730.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/750.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/987.png" alt="">
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="web_files/20158.png" alt="">
+        </div>
+  
+      </section>
     
     <section id="contact">
       <center>
@@ -1559,9 +1644,21 @@
     </section>
 
     <section id="about"></section>
-    
+
+  
 </body>
 <script src="scripts.js"></script>
+<script>
+  document.querySelectorAll('.image_container img').forEach(image=>{
+    image.onclick = () =>{
+      document.querySelector('.popup-image').style.display = 'block';
+      document.querySelector('.popup-image img').src = image.getAttribute('src')
+    }
+  });
+  document.querySelector('.popup-image span').onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'none';
+  }
+</script>
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
