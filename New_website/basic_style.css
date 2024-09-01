@@ -38,10 +38,10 @@ nav img{
     z-index: 100;
     height: max-content;
     font-family: 'Salsa' , cursive;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 15px;
-    word-spacing: 50px;
+    word-spacing: 5px;
     -webkit-backdrop-filter: blur(100px);
     backdrop-filter: blur(100px);
     background: url(banner_bg.jpg);
